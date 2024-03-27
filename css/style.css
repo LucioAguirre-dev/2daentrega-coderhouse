@@ -1,0 +1,167 @@
+/* style.css */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html {
+     font-size: 18px;
+}
+
+body {
+     font-family: 'Roboto', monospace;
+}
+
+section {
+     margin-top: 20px;
+     padding: 40px;
+     text-align: justify;
+}
+
+h1 {
+     font-weight: bold;
+     font-size: 1.5rem;
+     color: #d8d3ac;
+}
+
+h2,
+h3 {
+     margin-top: 20px;
+     text-align: center;
+}
+
+h2 {
+     font-size: 1.3rem;
+     color: #9E5327;
+     margin-bottom: 20px;
+}
+
+h3 {
+     font-size: 1.2rem;
+     color: #505050;
+     text-shadow: 1px 1px 2px #000;
+}
+
+h2 em {
+     font-weight: bold;
+}
+
+p {
+     font-size: 0.95rem;
+}
+
+header,
+.centered-logo-text,
+footer {
+     background-color: #2b3035;
+     color: #d8d3ac;
+}
+
+header nav,
+footer {
+     box-shadow: 0px 5px 10px 0px #2b3035;
+}
+
+nav {
+     background-color: #0C282B;
+}
+
+nav ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style-type: none;
+     padding: 3px;
+}
+
+nav li {
+     margin-right: 5px;
+     padding: 3px;
+}
+
+nav a {
+     text-decoration: none;
+     color: #FFFFFF;
+     padding: 10px 15px;
+     display: block;
+}
+
+.centered-logo-text {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+     padding-top: 70px;
+     padding-bottom: 20px;
+     margin-bottom: 20px;
+}
+
+.align-center {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+
+.center-image {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+}
+
+footer {
+     margin-top: 30px;
+     display: flex;
+     justify-content: right;
+}
+
+.service-container,
+.products-container {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     /* border: 2px solid #333; */
+     border-radius: 10px;
+}
+
+.product {
+     border: 1px solid rgb(84, 84, 84); 
+     padding: 1rem;
+     border-radius: 10px;
+     text-align: center;
+}
+
+.product img,
+.tamano-productos {
+     width: 100%;
+     object-fit: cover;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+
+     .service-container,
+     .products-container {
+          flex-direction: row;
+          grid-template-columns: repeat(2, 1fr);
+     }
+
+     .products-container .imagenes-siete {
+          display: block;
+          grid-column: span 2;
+     }
+}
+
+@media screen and (min-width: 1024px) {
+
+     .service-container>div,
+     .products-container {
+          flex: 1;
+     }
+}
+
+a:hover {
+     text-decoration: overline;
+}
