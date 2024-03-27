@@ -11,6 +11,8 @@ html {
 
 body {
      font-family: 'Roboto', monospace;
+     background-color: #1f1f1f;
+     color: #dddddd;
 }
 
 section {
